@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+              <title> what isGrameen Credit?</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+          <style>
+ 	.open-button {
+                font-family: sans-serif;
+                background-color: blue;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  width:250px;
+  border-radius: 12px;
+
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+  background-image:url('WP37411.png');
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  background-image:url('WP37411.png');
+  max-width: 300px;
+  padding: 10px;
+  /*background-color: white;*/
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:rgb(0, 0, 0);
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  color:white;
+  background-color:black;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: rgb(46, 236, 52);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:rgb(41, 236, 243);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+body {
+  background-image: url(WP37411.png);
+  padding: auto;
+  font-family: Arial;
+}
+			  
+			  
+          hr.new{
+              border:1px solid orange; 
+          }
+          .foot
+  {
+    background-color: black;
+    color:white;
+  }
+  .imagefont{
+				  width:100%;
+				  height: 150px;
+				  background-color: white;
+				  color: aliceblue;
+			  }
+       
+        .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9{
+    position: unset;
+  }
+  .card
+  {
+    position: unset;
+  }
+  .color
+  {
+    color:white;
+  }
+  .sticky {
+  position: sticky;
+  top: 0;
+  font-size: 15px;
+  background-image: url('WP37411.png');
+  }
+
+.bg{
+  color:white;
+}
+    .bg1{
+  background-color: black;
+}
+          </style>
+    </head>
+    <body>
+      <ul class="nav nav-tabs navbar navbar-light sticky" >
+        <li class="nav-item"> <a class="nav-link color" href="empower 1.html" style="color:white"> <strong>HOME</strong> </a> </li>
+        <li class="nav-item dropdown bg">
+        <button class="nav-link dropdown-toggle color" data-toggle="dropdown" style="color:white;background-color:transparent;"> <b>ABOUT US</b></button>
+        <div class="dropdown-menu bg1">
+          <a class="dropdown-item " href="Visionmission.html" style="color:#1f87e2">Vision and Mission</a>
+          <a class="dropdown-item " href="our.html" style="color:#1f87e2">Our Team</a>
+  <a class="dropdown-item" href="#" style="color:#1f87e2"> Partners</a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2">Gallery</a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2">Financial Statements</a>
+   </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link color" href="program.html" style="color:white"> <b>PROGRAMS</b></a>
+      </li>
+    
+    <li class="nav-item">
+        <a class="nav-link color" href="govt.html" style="color:white"> <b>GOVERNMENT INFO</b></a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link color" href="sucess.html" style="color:white"> <b> SUCCESS STORIES</b></a>
+      </li>
+
+   <li class="nav-item">
+        <a class="nav-link color" href="mentor.html" style="color:white" > <b>MENTORSHIP</b></a>
+     
+	 <li class="nav-item dropdown bg">
+        <button class="nav-link dropdown-toggle color" data-toggle="dropdown" style="color:white;background-color:transparent;"> <b>GRAMEEN CREDIT </b></button>
+        <div class="dropdown-menu bg1">
+          <a class="dropdown-item " href="what is grameen credit.html" style="color:#1f87e2">What is Grameen Bank?</a>
+			          <a class="dropdown-item " href="Method of action.html" style="color:#1f87e2">Method of Action</a>
+          <a class="dropdown-item " href="3cs.html" style="color:#1f87e2">What is 3c's Credit?</a>
+         <a class="dropdown-item" href="eradication.html" style="color:#1f87e2">Role of Grameen credit in eradication of Poverty</a>
+		  <a class="dropdown-item " href="vicious.html" style="color:#1f87e2">Breaking The Vicious Cycle of Poverty</a>
+          <a class="dropdown-item" href="lending.html" style="color:#1f87e2">Credit Lending Models</a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2">Data and Report</a>
+   </div>
+      </li>
+	  
+	   
+	   
+    
+      
+   
+     <li class="nav-item dropdown">
+        <button class="nav-link dropdown-toggle color" data-toggle="dropdown" style="color:white;background-color: transparent;"> <b>LANGUAGES</b></button>
+        <div class="dropdown-menu bg1">
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>English</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Hindi</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Telugu</b></a>
+         <a class="dropdown-item " href="#" style="color:#1f87e2"><b>Malyalam</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Tamil</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Marati</b></a>
+  </div>
+      </li>
+    </ul>
+		<br>
+		<h1 style="color: white;text-align: center"> WHAT IS GRAMEEN CREDIT?</h1>
+		<br>
+	<div class="container" style="color: white;">
+	  <img src="https://consumervaluecreation.files.wordpress.com/2018/03/microfinancebanner.jpg" width="100%" height="400px">
+	  <hr>
+		
+	  <p style="text-align: justify;color: white">
+		The word “microcredit” did not exist before the seventies. Now it has become a buzz-word among the development practitioners. In the process, the word has been imputed to mean everything to everybody. No one now gets shocked if somebody uses the term “microcredit” to mean agricultural credit, or rural credit, or cooperative credit, or consumer credit, credit from the savings and loan associations, or from credit unions, or from money lenders. When someone claims microcredit has a thousand year history, or a hundred year history, nobody finds it as an exciting piece of historical information.
+	  </p>
+		<p style="text-align: justify;color: white">
+		
+I think this is creating a lot of misunderstanding and confusion in the discussion about microcredit. We really don’t know who is talking about what. I am proposing that we put labels to various types of microcredit so that we can clarify at the beginning of our discussion which microcredit we are talking about. This is very important for arriving at clear conclusions, formulating right policies, designing appropriate institutions and methodologies. Instead of just saying “microcredit” we should specify which category of microcredi
+		</p>
+		
+<h4><b style="text-align: justify;color: white;">Let me suggest a broad classification of microcredit :</b></h4>		
+		
+		<ol style="color: white;">
+		<li>Traditional informal microcredit (such as, moneylender’s credit, pawn shops, loans from friends and relatives, consumer credit in informal market, etc.)</li>
+		<li>Microcredit based on traditional informal groups (such as, tontin, su su, ROSCA, etc.)
+</li>
+		<li>Activity-based microcredit through conventional or specialised banks (such as, agricultural credit, livestock credit, fisheries credit, handloom credit, etc.)
+</li>
+		<li>Rural credit through specialised banks.
+</li>
+		<li>Cooperative microcredit (cooperative credit, credit union, savings and loan associations, savings banks, etc.)
+</li>
+		<li>Consumer microcredit.
+</li>
+		<li>Grameen type microcredit or Grameen credit.
+</li>
+	</ol>
+		<p style="text-align: justify">
+		This is a very quick attempt at classification of microcredit just to make a point. The point is —every time we use the word “microcredit” we should make it clear which type (or cluster of types) of microcredit we are talking about. Otherwise we’ll continue to create endless confusion in our discussion. Needless to say that the classification I have suggested is only tentative. We can refine this to allow better understanding and better policy decisions.
+
+Classification can also be made in the context of the issue under discussion. I am arguing that we must discontinue using the term “microcredit” or “microfinance” without identifying its category.
+		</p>
+		<p style="text-align: justify">
+		Microcredit data are compiled and published by different organizations. We find them useful. I propose that while publishing these data we identify the category or categories of microcredit each organization provides. Then we can prepare another set of important information ? number of poor borrowers, and their gender composition, loan disbursed, loan outstanding, balance of savings, etc. under each of these categories, countrywise, regionwise, and globally.
+		</p>
+		<p style="text-align: justify">
+		These sets of information will tell us which category of microcredit is serving how many poor borrowers, their gender break-up, their growth during a year or a period, loans disbursed, loans outstanding, savings, etc. The categories which are doing better, more support can go in their direction. The categories which are doing poorly may be helped to improve their performance. For policy-maters this will be enormously helpful. For analysis purpose this will make a world of difference.
+		</p>
+		
+		<p style="text-align: justify">
+		I urge Microcredit Summit Campaign secretariat to present the information that they already collect on number of clients, number of the poorest among them, number of poorest clients that are women, number of clients that have crossed the poverty line—broken down for each of the categories of microcredit. This will help donors to select the categories they would like to support. This sorting out is very important for the donors, as well as the policymakers.
+		</p>
+		
+		<h4>
+		<b>Grameen credit</b>
+		</h4>
+		<p style="text-align: justify">
+		Whenever I use the word “microcredit” I actually have in mind Grameen type microcredit or Grameencredit. But if the person I am talking to understands it as some other category of microcredit my arguments will not make any sense to him. Let me list below the distinguishing features of Grameencredit. This is an exhaustive list of such features. Not every Grameen type programme has all these features present in the programme. Some programmes are strong in some of the features, while others are strong in some other features. But on the whole they display a general convergence to some basic features on the basis of which they introduce themselves as Gra
+		</p>
+		<h4><b>General features of Grameencredit are :</b></h4>
+		<ol>
+		<li>It promotes credit as a human right.
+</li>
+		<li>Its mission is to help the poor families to help themselves to overcome poverty. It is targeted to the poor, particularly poor women.
+</li>
+        <li>Most distinctive feature of Grameencredit is that it is not based on any collateral, or legally enforceable contracts. It is based on “trust”, not on legal procedures and system.
+</li>
+		<li>It is offered for creating self-employment for income-generating activities and housing for the poor, as opposed to consumption.
+</li>
+		<li>It was initiated as a challenge to the conventional banking which rejected the poor by classifying them to be “not creditworthy”. As a result it rejected the basic methodology of the conventional banking and created its own methodology.
+</li>
+		<li>It provides service at the door-step of the poor based on the principle that the people should not go to the bank, bank should go to the people.
+</li>
+		<li>In order to obtain loans a borrower must join a group of borrowers.
+</li>
+		<li>Loans can be received in a continuous sequence. New loan becomes available to a borrower if her previous loan is repaid.
+</li>
+		<li>All loans are to be paid back in instalments (weekly, or bi-weekly).
+</li>
+		<li>Simultaneously more than one loan can be received by a borrower.
+</li>
+		<li>It comes with both obligatory and voluntary savings programmes for the borrowers.
+</li>
+		<li>Generally these loans are given through non-profit organizations or through institutions owned primarily by the borrowers. If it is done through for-profit institutions not owned by the borrowers, efforts are made to keep the interest rate at a level which is close to a level commensurate with sustainability of the programme rather than bringing attractive return for the investors. Grameencredit’s thumb-rule is to keep the interest rate as close to the market rate, prevailing in the commercial banking sector, as possible, without sacrificing sustain-ability. In fixing the interest rate market interest rate is taken as the reference rate, rather than the moneylenders’ rate. Reaching the poor is its non-negotiable mission. Reaching sustainability is a directional goal. It must reach sustainability as soon as possible, so that it can expand its outreach without fund constraints.
+</li>
+		<li>Grameencredit gives high priority on building social capital. It is promoted through formation of groups and centres, developing leadership quality through annual election of group and centre leaders, electing board members when the institution is owned by the borrowers. To develop a social agenda owned by the borrowers, something similar to the “sixteen decisions”, it undertakes a process of intensive discussion among the borrowers, and encourage them to take these decisions seriously and implement them. It gives special emphasis on the formation of human capital and concern for protecting environment. It monitors children’s education, provides scholarships and student loans for higher education. For formation of human capital it makes efforts to bring technology, like mobile phones, solar power, and promote mechanical power to replace manual power.
+</li>	
+		</ol>
+<p style="text-align: justify">
+		Grameencredit is based on the premise that the poor have skills which remain unutilised or under-utilised. It is definitely not the lack of skills which make poor people poor. Grameen believes that the poverty is not created by the poor, it is created by the institutions and policies which surround them. In order to eliminate poverty all we need to do is to make appropriate changes in the institutions and policies, and/or create new ones. Grameen believes that charity is not an answer to poverty. It only helps poverty to continue. It creates dependency and takes away individual’s initiative to break through the wall of poverty. Unleashing of energy and creativity in each human being is the answer to poverty.
+
+		</p>	
+		<p style="text-align: justify">
+		Grameen brought credit to the poor, women, the illiterate, the people who pleaded that they did not know how to invest money and earn an income. Grameen created a methodology and an institution around the financial needs of the poor, and created access to credit on reasonable term enabling the poor to build on their existing skill to earn a better income in each cycle of loans.
+
+If donors can frame category wise micro credit policies they may overcome some of their discomforts. General policy for microcredit in its wider sense, is bound to be devoid of focus and sharpness.
+
+
+		
+		</p>
+		
+		</div>	
+	<footer class="page-footer font-small unique-color-dark foot">
+                  <hr class="new">
+                  <div style="background-color:black;">
+                    <div class="container">
+                
+                      <!-- Grid row-->
+                      <div class="row py-4 d-flex align-items-center">
+                
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                          <h6 class="mb-0">Get connected with us on social networks!</h6>
+                        </div>
+                        <!-- Grid column -->
+                
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                
+                          <!-- Facebook -->
+                          <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                          </a>
+                          <!-- Twitter -->
+                          <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                          </a>
+                          <!-- Google +-->
+                          <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                          </a>
+                          <!--Linkedin -->
+                          <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                          </a>
+                          <!--Instagram-->
+                          <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                          </a>
+                
+                        </div>
+                        <!-- Grid column -->
+                
+                      </div>
+                      <!-- Grid row-->
+                
+                    </div>
+                  </div>
+                  <hr class="new">
+                  <!-- Footer Links -->
+                  
+                  <div class="container-fluid">
+                    <div style="margin-left: 150px;background-color: black;">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold" style="margin-left: 25px;">About us</h6>
+                        <p >
+                          <ul class="sublist">
+                          <li>About us</li>
+                          <li>Mission and vision</li>
+                          <li>Our Team</li>
+                          <li>Partners</li>
+                          <li>Gallery</li>
+                          <li>financials</li>
+                          </ul>
+                        </p>
+                
+                      </div>
+                      <!-- Grid column -->
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Our Work</h6>
+                        <ul class="sublist">
+                          <li>Stories Of Hope</li>
+                             <li>Fundraise With Us</li>
+                          <li>Volunteer</li>
+                          <li>Join Us Online</li>
+                          <li>Campaigns</li>
+                          <li>Careers</li>
+                          </ul>
+                
+                      </div>
+                      <!-- Grid column -->
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Get Involved</h6>
+                     
+                        <ul class="sublist">
+                          <li>Partnerships</li>
+                             <li>Our Role</li>
+                          <li>Impact</li>
+                          <li>Awards</li>
+                          <li>Our Reach</li>
+                          <li>ventures</li>
+                          </ul>
+                
+                      </div>
+                      <!-- Grid column -->
+                   <!-- Grid column -->
+                   <div class="col-md-2">
+                
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold" style="margin-left: 25px;">Donations</h6>
+                      <ul class="sublist">
+                        <li>Online Donations</li>
+                           <li>Sponsor A School For A Year</li>
+                        <li>Write a Cheque/DD</li>
+                        <li>Donate for Tax Benefits
+                        </li>
+                        </ul>
+                    
+            
+                  </div>
+                
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                        
+                        <p>
+                          <i class="fas fa-home mr-3"></i> India</p>
+                        <p>
+                          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p>
+                          <i class="fas fa-phone mr-3"></i> + 91 999999999</p>
+                        <p>
+                          <i class="fas fa-print mr-3"></i> + 91 9999999999</p>
+                
+                      </div>
+                      <!-- Grid column -->
+                
+                    </div>
+                    <!-- Grid row -->
+                
+                  </div>
+               
+                </footer>
+              
+        
+                <button class="open-button" onclick="openForm()">Dora</button>
+        
+                <div class="chat-popup" id="myForm">
+                  <form action="/action_page.php" class="form-container">
+                    <h1 style="text-align: center;"><img src="logo3.png" alt="logo" style="width:45px;"></h1>
+                
+                <p style="text-align: center;">How May I Help You</p>
+                <label for="msg"></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+                
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+                
+                <script>
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+                
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+                </script>
+              
+                  </body>
+                  </html>

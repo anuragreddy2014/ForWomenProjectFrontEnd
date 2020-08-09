@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+    <head>
+              <title>Govt schemes</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+          <style>
+ 	.open-button {
+                font-family: sans-serif;
+                background-color: blue;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  width:250px;
+  border-radius: 12px;
+
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+  background-image:url('WP37411.png');
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  background-image:url('WP37411.png');
+  max-width: 300px;
+  padding: 10px;
+  /*background-color: white;*/
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:rgb(0, 0, 0);
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  color:white;
+  background-color:black;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: rgb(46, 236, 52);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:rgb(41, 236, 243);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+body {
+  background-image: url(WP37411.png);
+  padding: auto;
+  font-family: Arial;
+}
+			  
+			  
+          hr.new{
+              border:1px solid orange; 
+          }
+          .foot
+  {
+    background-color: black;
+    color:white;
+  }
+  .imagefont{
+				  width:100%;
+				  height: 150px;
+				  background-color: white;
+				  color: aliceblue;
+			  }
+       
+        .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9{
+    position: unset;
+  }
+  .card
+  {
+    position: unset;
+  }
+  .color
+  {
+    color:white;
+  }
+  .sticky {
+  position: sticky;
+  top: 0;
+  font-size: 15px;
+  background-image: url('WP37411.png');
+  }
+
+.bg{
+  color:white;
+}
+    .bg1{
+  background-color: black;
+}
+          </style>
+    </head>
+    <body>
+      <ul class="nav nav-tabs navbar navbar-light sticky" >
+      <li class="nav-item">
+        <a class="nav-link color" href="empower 1.html" style="color:white"> <b>HOME</b>
+  </a>
+      </li>
+      <li class="nav-item dropdown bg">
+        <button class="nav-link dropdown-toggle color" data-toggle="dropdown" style="color:white;background-color:transparent;"> <b>ABOUT US</b></button>
+        <div class="dropdown-menu bg1">
+          <a class="dropdown-item " href="Visionmission.html" style="color:#1f87e2">Vision and Mission</a>
+          <a class="dropdown-item " href="our.html" style="color:#1f87e2">Our Team</a>
+  <a class="dropdown-item" href="#" style="color:#1f87e2"> Partners</a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2">Gallery</a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2">Financial Statements</a>
+   </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link color" href="program.html" style="color:white"> <b>PROGRAMS</b></a>
+      </li>
+    
+    <li class="nav-item">
+        <a class="nav-link color" href="govt.html" style="color:white"> <b>GOVERNMENT INFO</b></a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link color" href="sucess.html" style="color:white"> <b> SUCCESS STORIES</b></a>
+      </li>
+
+   <li class="nav-item">
+        <a class="nav-link color" href="mentor.html" style="color:white" > <b>MENTORSHIP</b></a>
+      </li>
+
+	 <li class="nav-item dropdown bg">
+        <button class="nav-link dropdown-toggle color" data-toggle="dropdown" style="color:white;background-color:transparent;"> <b>GRAMEEN CREDIT </b></button>
+        <div class="dropdown-menu bg1">
+          <a class="dropdown-item " href="what is grameen credit.html" style="color:#1f87e2">What is Grameen Bank?</a>
+			          <a class="dropdown-item " href="Method of action.html" style="color:#1f87e2">Method of Action</a>
+          <a class="dropdown-item " href="3cs.html" style="color:#1f87e2">What is 3c's Credit?</a>
+         <a class="dropdown-item" href="eradication.html" style="color:#1f87e2">Role of Grameen credit in eradication of Poverty</a>
+		  <a class="dropdown-item " href="vicious.html" style="color:#1f87e2">Breaking The Vicious Cycle of Poverty</a>
+          <a class="dropdown-item" href="lending.html" style="color:#1f87e2">Credit Lending Models</a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2">Data and Report</a>
+   </div>
+      </li>
+
+   
+     <li class="nav-item dropdown">
+        <button class="nav-link dropdown-toggle color" data-toggle="dropdown" style="color:white;background-color: transparent;"> <b>LANGUAGES</b></button>
+        <div class="dropdown-menu bg1">
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>English</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Hindi</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Telugu</b></a>
+  <a class="dropdown-item " href="#" style="color:#1f87e2"><b>Malyalam</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Tamil</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Marati</b></a>
+  </div>
+      </li>
+        
+      </li>
+      
+    </ul>
+
+
+
+<br>
+
+        <br>
+        
+        <h1 style="color:white;text-align: center; font-size: 75px;">Women Empowerment Schemes
+        </h1>
+<br>
+          
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+          <div class="card" style="width:365px">
+            
+    <img  src="Beti Bachao Beti Padhao Scheme.png" style="width:100%;height:200px;">
+            <div class="card-body">
+              <h4 class="card-title">Beti Bachao Beti Padhao Scheme</h4>
+              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+              <a href="https://wcd.nic.in/bbbp-schemes" class="btn btn-primary">Know More</a>
+            </div>
+          </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width:365px">
+                
+
+        <img  src="one stop centre.jpg" style="width:100%;height:200px;">
+        
+                <div class="card-body">
+                  <h4 class="card-title" >One Stop Centre<br> Scheme</h4>
+                  
+                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                  <a href="https://wcd.nic.in/schemes/one-stop-centre-scheme-1" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card" style="width:365px">
+                    
+          
+            <img  src="Helpline.png" style="width:100%;height:200px;">
+          
+                    <div class="card-body">
+                      <h4 class="card-title">Women Helpline<br> Scheme</h4>
+                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      <a href="https://wcd.nic.in/schemes/women-helpline-scheme-2" class="btn btn-primary">Know More</a>
+                    </div>
+                  </div>
+                    </div>
+          </div>
+        </div>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+            <div class="card" style="width:365px">
+              
+      <img  src="ujjwala.png" style="width:100%;height:200px;">
+              <div class="card-body">
+                <h4 class="card-title">UJJAWALA </h4>
+                <p class="card-text"> A Comprehensive Scheme for Prevention of trafficking and Rescue, Rehabilitation and Re-integration of Victims of Trafficking and Commercial Sexual Exploitation</p>
+                <a href="https://wcd.nic.in/schemes/ujjawala-comprehensive-scheme-prevention-trafficking-and-rescue-rehabilitation-and-re" class="btn btn-primary">Know More</a>
+              </div>
+            </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width:365px">
+                
+          <img  src="swadhargreh.png" style="width:100%;height:200px;">
+        
+                  <div class="card-body">
+                    <h4 class="card-title">SWADHAR Greh </h4>
+                    <p class="card-text">A Comprehensive Scheme for Prevention of trafficking and Rescue, Rehabilitation and Re-integration of Victims of Trafficking and Commercial Sexual Exploitation</p>
+                    <a href="https://wcd.nic.in/schemes/swadhar-greh-scheme-women-difficult-circumstances" class="btn btn-primary">Know More</a>
+                  </div>
+                </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card" style="width:365px">
+                      
+      
+              <img  src="narishakthi.png" style="width:100%;height:200px;">
+          
+                      <div class="card-body">
+                        <h4 class="card-title">NARI SHAKTI PURASKAR</h4>
+                        <p class="card-text">A Comprehensive Scheme for Prevention of trafficking and Rescue, Rehabilitation and Re-integration of Victims of Trafficking and Commercial Sexual Exploitation</p>
+                        <a href="https://wcd.nic.in/schemes/nari-shakti-puraskar" class="btn btn-primary">Know More</a>
+                      </div>
+                    </div>
+                      </div>
+            </div>
+          </div>
+            <br>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+              <div class="card" style="width:365px">
+                
+    
+        <img  src="Stree Shakti Award.png" style="width:100%;height:200px;">
+                <div class="card-body">
+                  <h4 class="card-title">Awardees of Stree Shakti Puruskar, 2014 & Awardees of Nari Shakti Puruskar</h4>
+                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                  <a href="https://wcd.nic.in/schemes/awardees-stree-shakti-puruskar-2014-awardees-nari-shakti-puruskar" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card" style="width:365px">
+                    
+      
+            <img  src="awardees.png" style="width:100%;height:200px;">
+          
+                    <div class="card-body">
+                      <h4 class="card-title">Awardees of Rajya Mahila Samman & Zila Mahila Samman</h4>
+                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      <a href="https://wcd.nic.in/schemes/awardees-rajya-mahila-samman-zila-mahila-samman" class="btn btn-primary">Know More</a>
+                    </div>
+                  </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card" style="width:365px">
+                        
+              
+                <img  src="Working-Women-Hostel-Scheme.png" style="width:100%;height:200px;">
+              
+                        <div class="card-body">
+                          <h4 class="card-title">Working <br>Women<br> Hostel</h4>
+                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                          <a href="https://wcd.nic.in/schemes/working-women-hostel" class="btn btn-primary">Know More</a>
+                        </div>
+                      </div>
+                        </div>
+              </div>
+            </div>
+              <br>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                <div class="card" style="width:365px">
+                  
+        
+          <img  src="nirbhaya.png" style="width:100%;height:200px;">
+        
+                  <div class="card-body">
+                    <h4 class="card-title">NIRBHAYA</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="https://wcd.nic.in/schemes/nirbhaya" class="btn btn-primary">Know More</a>
+                  </div>
+                </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card" style="width:365px">
+                      
+            
+              <img  src="mahilapolice.png" style="width:100%;height:200px;">
+            
+                      <div class="card-body">
+                        <h4 class="card-title">Mahila police Volunteers</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="https://wcd.nic.in/schemes/mahila-police-volunteers" class="btn btn-primary">Know More</a>
+                      </div>
+                    </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card" style="width:365px">
+                          
+                
+                  <img  src="mahila-e-haat.png" style="width:100%;height:200px;">
+                
+                          <div class="card-body">
+                            <h4 class="card-title">Mahila E-Haat</h4>
+                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                            <a href="https://wcd.nic.in/schemes/mahila-e-haat" class="btn btn-primary">Know More</a>
+                          </div>
+                        </div>
+                          </div>
+                </div>
+              </div>
+                <br>
+        
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                  <div class="card" style="width:365px">
+                    
+          
+            <img  src="mahilashakthischeme.png" style="width:100%;height:200px;">
+      
+                    <div class="card-body">
+                      <h4 class="card-title">Mahila Shakti Kendras (MSK)</h4>
+                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      <a href="https://wcd.nic.in/schemes/mahila-shakti-kendras-msk" class="btn btn-primary">Know More</a>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+   
+						
+                <footer class="page-footer font-small unique-color-dark foot">
+                  <hr class="new">
+                  <div style="background-color:black;">
+                    <div class="container">
+                
+                      <!-- Grid row-->
+                      <div class="row py-4 d-flex align-items-center">
+                
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                          <h6 class="mb-0">Get connected with us on social networks!</h6>
+                        </div>
+                        <!-- Grid column -->
+                
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                
+                          <!-- Facebook -->
+                          <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                          </a>
+                          <!-- Twitter -->
+                          <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                          </a>
+                          <!-- Google +-->
+                          <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                          </a>
+                          <!--Linkedin -->
+                          <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                          </a>
+                          <!--Instagram-->
+                          <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                          </a>
+                
+                        </div>
+                        <!-- Grid column -->
+                
+                      </div>
+                      <!-- Grid row-->
+                
+                    </div>
+                  </div>
+                  <hr class="new">
+                  <!-- Footer Links -->
+                  
+                  <div class="container-fluid">
+                    <div style="margin-left: 150px;background-color: black;">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold" style="margin-left: 25px;">About us</h6>
+                        <p >
+                          <ul class="sublist">
+                          <li>About us</li>
+                          <li>Mission and vision</li>
+                          <li>Our Team</li>
+                          <li>Partners</li>
+                          <li>Gallery</li>
+                          <li>financials</li>
+                          </ul>
+                        </p>
+                
+                      </div>
+                      <!-- Grid column -->
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Our Work</h6>
+                        <ul class="sublist">
+                          <li>Stories Of Hope</li>
+                             <li>Fundraise With Us</li>
+                          <li>Volunteer</li>
+                          <li>Join Us Online</li>
+                          <li>Campaigns</li>
+                          <li>Careers</li>
+                          </ul>
+                
+                      </div>
+                      <!-- Grid column -->
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Get Involved</h6>
+                     
+                        <ul class="sublist">
+                          <li>Partnerships</li>
+                             <li>Our Role</li>
+                          <li>Impact</li>
+                          <li>Awards</li>
+                          <li>Our Reach</li>
+                          <li>ventures</li>
+                          </ul>
+                
+                      </div>
+                      <!-- Grid column -->
+                   <!-- Grid column -->
+                   <div class="col-md-2">
+                
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold" style="margin-left: 25px;">Donations</h6>
+                      <ul class="sublist">
+                        <li>Online Donations</li>
+                           <li>Sponsor A School For A Year</li>
+                        <li>Write a Cheque/DD</li>
+                        <li>Donate for Tax Benefits
+                        </li>
+                        </ul>
+                    
+            
+                  </div>
+                
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                        
+                        <p>
+                          <i class="fas fa-home mr-3"></i> India</p>
+                        <p>
+                          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p>
+                          <i class="fas fa-phone mr-3"></i> + 91 999999999</p>
+                        <p>
+                          <i class="fas fa-print mr-3"></i> + 91 9999999999</p>
+                
+                      </div>
+                      <!-- Grid column -->
+                
+                    </div>
+                    <!-- Grid row -->
+                
+                  </div>
+                </div>
+                </footer>
+              
+        
+                <button class="open-button" onclick="openForm()">Dora</button>
+        
+                <div class="chat-popup" id="myForm">
+                  <form action="/action_page.php" class="form-container">
+                    <h1 style="text-align: center;"><img src="logo3.png" alt="logo" style="width:45px;"></h1>
+                
+                <p style="text-align: center;">How May I Help You</p>
+                <label for="msg"></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+                
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+                
+                <script>
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+                
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+                </script>
+              
+                  </body>
+                  </html>

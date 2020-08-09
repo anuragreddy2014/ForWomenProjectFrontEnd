@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+              <title>Mentor Ship</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+          <style>
+ 	.open-button {
+                font-family: sans-serif;
+                background-color: blue;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  width:250px;
+  border-radius: 12px;
+
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+  background-image:url('WP37411.png');
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  background-image:url('WP37411.png');
+  max-width: 300px;
+  padding: 10px;
+  /*background-color: white;*/
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:rgb(0, 0, 0);
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  color:white;
+  background-color:black;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: rgb(46, 236, 52);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:rgb(41, 236, 243);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+body {
+  background-image: url(WP37411.png);
+  padding: auto;
+  font-family: Arial;
+}
+			  
+			  
+          hr.new{
+              border:1px solid orange; 
+          }
+          .foot
+  {
+    background-color: black;
+    color:white;
+  }
+  .imagefont{
+				  width:100%;
+				  height: 150px;
+				  background-color: white;
+				  color: aliceblue;
+			  }
+       
+        .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9{
+    position: unset;
+  }
+  .card
+  {
+    position: unset;
+  }
+  .color
+  {
+    color:white;
+  }
+  .sticky {
+  position: sticky;
+  top: 0;
+  font-size: 15px;
+  background-image: url('WP37411.png');
+  }
+
+.bg{
+  color:white;
+}
+    .bg1{
+  background-color: black;
+}
+          </style>
+    </head>
+    <body>
+      <ul class="nav nav-tabs navbar navbar-light sticky" >
+      <li class="nav-item">
+        <a class="nav-link color" href="empower 1.html" style="color:white"> <b>HOME</b>
+  </a>
+      </li>
+      <li class="nav-item dropdown bg">
+        <button class="nav-link dropdown-toggle color" data-toggle="dropdown" style="color:white;background-color:transparent;"> <b>ABOUT US</b></button>
+        <div class="dropdown-menu bg1">
+          <a class="dropdown-item " href="Visionmission.html" style="color:#1f87e2">Vision and Mission</a>
+          <a class="dropdown-item " href="our.html" style="color:#1f87e2">Our Team</a>
+  <a class="dropdown-item" href="#" style="color:#1f87e2"> Partners</a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2">Gallery</a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2">Financial Statements</a>
+   </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link color" href="program.html" style="color:white"> <b>PROGRAMS</b></a>
+      </li>
+    
+    <li class="nav-item">
+        <a class="nav-link color" href="govt.html" style="color:white"> <b>GOVERNMENT INFO</b></a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link color" href="sucess.html" style="color:white"> <b> SUCCESS STORIES</b></a>
+      </li>
+
+   <li class="nav-item">
+        <a class="nav-link color" href="mentor.html" style="color:white" > <b>MENTORSHIP</b></a>
+      </li>
+
+
+	 <li class="nav-item dropdown bg">
+        <button class="nav-link dropdown-toggle color" data-toggle="dropdown" style="color:white;background-color:transparent;"> <b>GRAMEEN CREDIT </b></button>
+        <div class="dropdown-menu bg1">
+          <a class="dropdown-item " href="what is grameen credit.html" style="color:#1f87e2">What is Grameen Bank?</a>
+			          <a class="dropdown-item " href="Method of action.html" style="color:#1f87e2">Method of Action</a>
+          <a class="dropdown-item " href="3cs.html" style="color:#1f87e2">What is 3c's Credit?</a>
+         <a class="dropdown-item" href="eradication.html" style="color:#1f87e2">Role of Grameen credit in eradication of Poverty</a>
+		  <a class="dropdown-item " href="vicious.html" style="color:#1f87e2">Breaking The Vicious Cycle of Poverty</a>
+          <a class="dropdown-item" href="lending.html" style="color:#1f87e2">Credit Lending Models</a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2">Data and Report</a>
+   </div>
+      </li>
+		   
+		
+     <li class="nav-item dropdown">
+        <button class="nav-link dropdown-toggle color" data-toggle="dropdown" style="color:white;background-color: transparent;"> <b>LANGUAGES</b></button>
+        <div class="dropdown-menu bg1">
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>English</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Hindi</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Telugu</b></a>
+  <a class="dropdown-item " href="#" style="color:#1f87e2"><b>Malyalam</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Tamil</b></a>
+          <a class="dropdown-item" href="#" style="color:#1f87e2"><b>Marati</b></a>
+  </div>
+      </li>
+    </ul>
+		
+				
+ <div class="container" style="color: aliceblue;">
+  <div>
+    <h1 style="text-align:center">Mentorship</h1>
+    <img src="mentorship image.jpg" width="100%" height="500">
+	
+	  <br>
+	  
+    <p>A women’s mentorship program is the right step forward
+        There is a lot we all have to do to finally level the playing field in the workplace. Hopefully, our society soon overcomes gender-related
+        work issues but until then a women’s mentorship program can help your female employees take on the challenges they encounter.</p>
+        <p>
+        Mentoring programs are a versatile solution that can help any individual with their career development. Mentoring programs can facilitate leadership skill development, among other
+        things. These skills allow women to step towards top positions. Here are 5 ways mentoring can benefit women in leadership.</p>
+        <h4>Process of mentoring:</h4>
+        <ol>
+            <li>Change Perceptions</li>
+            <li>Articulate Career Ambitions</li>
+            <li>Stay Accountable for Goal Achievement</li>
+            <li>Build a Solid Network</li>
+            <li> Gain Confidence</li>
+        </ol>
+    </div>
+    <div>
+       
+        <h2 style="text-align: center;">Our Mentors</h2> 
+		<h4 style="text-align: center;">Laxmi Agarwal</h4>
+       
+          <!-- Video -->
+          <div class="container">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7Fq0YvfluN4" style="width: 100%;height: 500px;"
+              allowfullscreen></iframe>
+          </div>
+  
+		<br>
+        <p>Laxmi Agarwal (born 1 June 1990) is an Indian campaigner with Stop Sale Acid and a TV host. She is an acid attack survivor and speaks
+            for the rights of acid attack victims. She was attacked in 2005 at age 15, by a 32-year-old man named Nadeem khan (Guddu) whose advances
+            she had rejected.Her story, among others, was told in a series on acid attack victims by Hindustan Times. She has also
+            advocated against acid attacks through gathering 27000 signatures for a petition to curb acid sales, and taking that cause to the Indian 
+            Supreme Court.Her petition led the Supreme Court to order the central and state governments to regulate the sale of acid, and the
+            Parliament to make prosecutions of acid attacks easier to pursue.</p>
+        <p>She is the Founder of Stop Sale Acid, a campaign against acid violence and sale of acid. 
+            Laxmi started this campaign with #StopSaleAcid which garnered nation wide support. She recently received International Women Empowerment
+            Award 2019 from IWES, Ministry of Women and Child Development, Ministry of Drinking Water and Sanitation and Unicef for her campaign Stop
+            Sale Acid.She is also the former director of Chhanv Foundation, a NGO dedicated to help the survivors of acid attacks in India.Laxmi 
+            received a 2014 International Women of Courage award by US First Lady Michelle Obama.She was also chosen as the NDTV Indian of the Year.
+            Chhapaak is a Bollywood movie starring actress Deepika Padukone, which is inspired by Laxmi's journey as an acid attack survivor.
+        </p>
+   </div>
+		
+	 <h4 style="text-align: center;color: white">Sunitha Krishnan</h4>
+	     <!-- Video -->
+          <div class="container">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1KXw7om01xA" style="width: 100%;height: 500px;"
+					allowfullscreen></iframe>
+			  <p style="text-align: justify;color: aliceblue">
+			  Sunitha Krishnan is an Indian social activist and chief functionary and co-founder of Prajwala, a non-governmental organization that rescues, rehabilitates and reintegrates sex-trafficked victims into society.
+
+Krishnan works in the areas of anti-human trafficking and social policy. Her organization, Prajwala shelters rescued women and children and set up one of the largest rehabilitation homes in the country. She is making it possible for NGOs organizations to manage jointly a range of protective and rehabilitative services for women and children who have been trafficked for commercial sexual exploitation. She was awarded India's fourth highest civilian award the Padma Shri in 2016.
+			  </p>
+          </div>
+  
+	 
+        <h4 style="text-align: center;">Dr. BV Pattabhiram</h4>
+      <div class="container">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V2eCI9MNcGA" style="width: 100%;height: 500px;"
+              allowfullscreen></iframe>
+          </div>
+		<br>
+        <p>Dr. BV Pattabhiram is a Post Graduate in Psychology, Philosophy, a PG Diploma holder in Guidance and Counselling, and Ph.D. from 
+            Osmania University (Yoga & Hypnotism - A Pragmatic Approach). He has been conducting workshops on Soft Skills / HRD; and motivating
+            Students, Teachers, Professionals, Entrepreneurs, and Leaders on various topics across India, USA, Australia, Malaysia, Thailand,
+            Singapore and Arab Countries and helping people to overcome their Stress & Fears, and achieve the desired success.</p>
+        <p>He received numerous awards, accolades and recognitions from Government and Private entities from across India and abroad.
+         The University of Florida gave him Honorary Doctorate for his tremendous work on Hypnosis in the year 1983. The Mayors of Nashville
+        and New Orleans, USA gave him honorary citizenship.
+        </p>
+
+    </div>
+    <div>
+	 
+	 
+	 <br>
+	 <div class="container" style="text-align: center;">
+  <h2 style="text-align: center;">Mentorship Programs will be updated soon....! </h2>
+                                        
+  <div class="spinner-border text-muted" ></div>
+  <div class="spinner-border text-primary"></div>
+  <div class="spinner-border text-success"></div>
+  <div class="spinner-border text-info"></div>
+  <div class="spinner-border text-warning"></div>
+  <div class="spinner-border text-danger"></div>
+</div>
+	 
+		</div>
+                <footer class="page-footer font-small unique-color-dark foot">
+                  <hr class="new">
+                  <div style="background-color:black;">
+                    <div class="container">
+                
+                      <!-- Grid row-->
+                      <div class="row py-4 d-flex align-items-center">
+                
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                          <h6 class="mb-0">Get connected with us on social networks!</h6>
+                        </div>
+                        <!-- Grid column -->
+                
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                
+                          <!-- Facebook -->
+                          <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                          </a>
+                          <!-- Twitter -->
+                          <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                          </a>
+                          <!-- Google +-->
+                          <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                          </a>
+                          <!--Linkedin -->
+                          <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                          </a>
+                          <!--Instagram-->
+                          <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                          </a>
+                
+                        </div>
+                        <!-- Grid column -->
+                
+                      </div>
+                      <!-- Grid row-->
+                
+                    </div>
+                  </div>
+                  <hr class="new">
+                  <!-- Footer Links -->
+                  
+                  <div class="container-fluid">
+                    <div style="margin-left: 150px;background-color: black;">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold" style="margin-left: 25px;">About us</h6>
+                        <p >
+                          <ul class="sublist">
+                          <li>About us</li>
+                          <li>Mission and vision</li>
+                          <li>Our Team</li>
+                          <li>Partners</li>
+                          <li>Gallery</li>
+                          <li>financials</li>
+                          </ul>
+                        </p>
+                
+                      </div>
+                      <!-- Grid column -->
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Our Work</h6>
+                        <ul class="sublist">
+                          <li>Stories Of Hope</li>
+                             <li>Fundraise With Us</li>
+                          <li>Volunteer</li>
+                          <li>Join Us Online</li>
+                          <li>Campaigns</li>
+                          <li>Careers</li>
+                          </ul>
+                
+                      </div>
+                      <!-- Grid column -->
+                
+                      <!-- Grid column -->
+                      <div class="col-md-2">
+                
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Get Involved</h6>
+                     
+                        <ul class="sublist">
+                          <li>Partnerships</li>
+                             <li>Our Role</li>
+                          <li>Impact</li>
+                          <li>Awards</li>
+                          <li>Our Reach</li>
+                          <li>ventures</li>
+                          </ul>
+                
+                      </div>
+                      <!-- Grid column -->
+                   <!-- Grid column -->
+                   <div class="col-md-2">
+                
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold" style="margin-left: 25px;">Donations</h6>
+                      <ul class="sublist">
+                        <li>Online Donations</li>
+                           <li>Sponsor A School For A Year</li>
+                        <li>Write a Cheque/DD</li>
+                        <li>Donate for Tax Benefits
+                        </li>
+                        </ul>
+                    
+            
+                  </div>
+                
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                        
+                        <p>
+                          <i class="fas fa-home mr-3"></i> India</p>
+                        <p>
+                          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p>
+                          <i class="fas fa-phone mr-3"></i> + 91 999999999</p>
+                        <p>
+                          <i class="fas fa-print mr-3"></i> + 91 9999999999</p>
+                
+                      </div>
+                      <!-- Grid column -->
+                
+                    </div>
+                    <!-- Grid row -->
+                
+                  </div>
+               
+                </footer>
+              
+        
+                <button class="open-button" onclick="openForm()">Dora</button>
+        
+                <div class="chat-popup" id="myForm">
+                  <form action="/action_page.php" class="form-container">
+                    <h1 style="text-align: center;"><img src="logo3.png" alt="logo" style="width:45px;"></h1>
+                
+                <p style="text-align: center;">How May I Help You</p>
+                <label for="msg"></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+                
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+                
+                <script>
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+                
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+                </script>
+              
+                  </body>
+                  </html>
